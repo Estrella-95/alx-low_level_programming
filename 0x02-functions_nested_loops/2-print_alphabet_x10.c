@@ -32,8 +32,7 @@ int i, j;
 
 	 {
 		_putchar(c + j);
-
-																		}   
+																	}   
 		_putchar(10);
 
 	}
