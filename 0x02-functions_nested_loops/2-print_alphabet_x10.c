@@ -20,7 +20,7 @@ void print_alphabet_x10(void)
 
 		char c = 'a';
 
-                int i, j;
+int i, j;
 
 
 
@@ -33,8 +33,7 @@ void print_alphabet_x10(void)
 	 {
 		_putchar(c + j);
 
-																		}
-                    
+																		}   
 		_putchar(10);
 
 	}
