@@ -1,9 +1,6 @@
 include "main.h"
 
-
-
 /**
- *
  *  _islower - Short description, single line
  *
  *  @c: contains value to be compared
@@ -14,21 +11,13 @@ include "main.h"
 
 int _islower(int c)
 
-
-
 {
-
-
 
 	if (c > 'a' && c < 'z')
 
 	{
-
-		return (1);
-
+               return (1);
 	}
-
-
 
 	else
 
@@ -37,7 +26,5 @@ int _islower(int c)
 		return (0);
 
 	}
-
-
 
 }
