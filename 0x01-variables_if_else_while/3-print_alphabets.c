@@ -1,30 +1,26 @@
 #include <stdio.h>
 /**
- * main - Program entry point
+ * main - Entry point
  *
- * Return: 0 on success. Error code otherwise
+ * Return: Always 0 (Success/correct)
  */
 int main(void)
+
 {
-	char a = 'a';
-	char A = 'A';
-	int n = 0
+	char lower_case;
+	char upper_case;
 
-		while (n < 52)
-		{
-			if (n < 26)
-			{
-				putchar(a);
-				a++;
-			}
-			else
-			{
-				putchar(A);
-				A++
-			}
-			n++
-		}
- 	      putchar('\n');
+	for(upper_case = 'A'; upper_case <= 'Z'; upper_case++)
+	{
+		putchar(upper_case);
+	}
 
-              return (0);
-}		
+	for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
+	{
+putchar(lowercase);
+	}
+
+putchar('\n');
+
+return (0);
+}
