@@ -1,11 +1,20 @@
 #include <stdio.h>
-	int main(void)
-{
-	for (int i = 0; i = 9; i++)
-	{
-		putchar(i + '0');
-	}
-	putchar('\n');
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success/correct)
+ */
+int main(void)
 
-	return (0);
+{
+	int i;
+
+	for (i = 48; i <= 57; i++)
+	{
+		putchar (i);
+	}
+
+	putchar ("\n");
+
+	return (0)
 }
