@@ -16,9 +16,6 @@ void print_alphabet_x10(void)
 	int count;
 
 
-
-
-
 	count = 0;
 
 	while (count < 10)
@@ -32,7 +29,6 @@ void print_alphabet_x10(void)
 			_putchar(alphabet);
 
 		}
-
 
 
 		count++;
