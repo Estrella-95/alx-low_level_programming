@@ -1,25 +1,33 @@
-#include "main.h"
+#include <stdio.h>
 
 #include <stdlib.h>
 
 #include <time.h>
 
-#include <stdio.h>
-
-/**
- *
- */
-
 int main(void)
-
+	
 {
-	int num;
 
-	srand(time(0));
+	int myrand;
 
-	num = rand();
+	int count;
 
-	printf("%i\n", num);
+	int total;
+
+	srand(time(NULL));
+
+	for (count = 0, total = 2772; total > 122; count++)
+
+	{
+			myrand = (rand() % 125) + 1;
+	
+			printf("%c", myrand);
+	
+			total -= myrand;
+	
+		}
+
+	printf("%c", total);
 
 	return (0);
 }
