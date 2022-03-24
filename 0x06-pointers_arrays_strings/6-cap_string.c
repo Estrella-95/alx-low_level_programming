@@ -1,83 +1,50 @@
-#include "main.h
+#include "main.h"
 
 /**
- * separators - checks and ensure that all string is capitalized
+ * cap_string - capitalize all words of a string
  *
- * @c: character to be checked
+ * @str: pointer string variable
  *
- * Return: if separator return 1. Otherwise return 0;
+ * Return: `str`
  */
 
-int separator(char c)
+char *cap_string(char *str)
 
 {
-	switch (c)
-	{
-		case ' ':
+		int i, c;
 
-		case '\t':
+	        int trigger;
 
-		case '\n':
+		char nots[] = ",;.!?(){}\n\t\" ";
 
-		case ',':
-
-		case ';':
-
-		case '.':
-
-		case '!':
-
-		case '?':
-
-		case '"':
-
-		case '(':
-
-		case ')':
-
-		case '{':
-
-		case '}':
-
-			return (1);
-
-		default:
-
-			return (0);
-	}
-
-}
-
-/**
- * cap_string - capitalizes all words of a string
- *
- * @s: string to uppercase
- *
- * Return: returns the modified string
- */
-
-char *cap_string(char *s)
-
-{
-	int count, upper;
-
-	upper = -32;
-
-	count = 0;
-
-	while (s[count] != '\0')
+		for (i = 0, trigger = 0; str[i] != '\0'; i++)
 
 	{
-		if (s[count] >= 'a' && s[count] <= 'z')
+
+		if (str[0] > 96 && str[0] < 123)
+
+		trigger = 1;
+
+		for (c = 0; nots[c] != '\0'; c++)
+
 		{
-			if (s[count] == *s || separator(s[count - 1]))
+																		if (nots[c] == str[i])
+																		trigger = 1;
+																     }
+	       if (trigger)
+																	{
 
-				s[count] += upper;
-		}
+																		if (str[i] > 96 && str[i] < 123)
+																	{
+																    str[i] -= 32;
+																	    trigger = 0;
+																	}
+																		else if (str[i] > 64 && str[i] < 91)																									    trigger = 0;
+																		else if (str[i] > 47 && str[i] < 58)
 
-		count++;
-	}
-
-	return (s);
+																		trigger = 0;
+																	}
+															}
+	 return (str);
 
 }
