@@ -12,9 +12,7 @@ int separator(char c)
 
 {
 	switch (c)
-
 	{
-
 		case ' ':
 
 		case '\t':
@@ -47,10 +45,10 @@ int separator(char c)
 
 			return (0);
 	}
+
 }
 
 /**
- *
  * cap_string - capitalizes all words of a string
  *
  * @s: string to uppercase
@@ -71,7 +69,6 @@ char *cap_string(char *s)
 
 	{
 		if (s[count] >= 'a' && s[count] <= 'z')
-
 		{
 			if (s[count] == *s || separator(s[count - 1]))
 
@@ -82,6 +79,5 @@ char *cap_string(char *s)
 	}
 
 	return (s);
-}
 
-© 2022 
+}
