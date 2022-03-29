@@ -5,31 +5,25 @@
  *
  * @a: 2d array of chars
  *
- * Return: void
- *
  */
 
 void print_chessboard(char (*a)[8])
 
 {
+		int y, x;
 
-		/*Declaring variables*/
+		y = 0;
 
-		int i, j;
-
-		i = 0;
-
-		while (i < 8) /*number repetitions*/
+		while (y < 8)
 		{
-			j = 0;
+			x = 0;
 
-			while (j < 8)
+			while (x < 8)
+												{
 
-																	      _putchar (a[i][j]);
-																	      j++;
-		}
-
-	       _putchar ('\n'); /*print new line*/
-
-	      i++; /*add +1*/
-}
+												_putchar(a[y][x]);
+												x++;
+																						}
+												_putchar('\n');
+												y++;
+		}								}
